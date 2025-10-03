@@ -125,6 +125,7 @@ function init() {
         imageData.data[indx + 1] = (c.g * alpha + imageData.data[indx + 1] * currAlpha) / (alpha + currAlpha);
         imageData.data[indx + 2] = (c.b * alpha + imageData.data[indx + 2] * currAlpha) / (alpha + currAlpha);
         imageData.data[indx + 3] = alpha + currAlpha;
+        imageData.data[indx + 4] = alpha + currAlpha;
     }
 
     function selectColorListener(event) {

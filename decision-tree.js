@@ -192,8 +192,8 @@ var dt = (function () {
         var entropyThrehold = builder.entropyThrehold;
         var maxTreeDepth = builder.maxTreeDepth;
         var ignoredAttributes = builder.ignoredAttributes;
-
-        if ((maxTreeDepth == 0) || (trainingSet.length <= minItemsCount)) {
+        var decideAttributes = builder. ignoredAttributes;
+         if ((maxTreeDepth == 0) || (trainingSet.length <= minItemsCount)) {
             // restriction by maximal depth of tree
             // or size of training set is to small
             // so we have to terminate process of building tree
